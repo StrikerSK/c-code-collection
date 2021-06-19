@@ -10,10 +10,10 @@ void powerValue(int *a, int b) {
 int main() {
     int a, b;
 
-    printf("Input initial value:");
+    printf("Input initial value: ");
     scanf("%d", &a);
 
-    printf("Input power value:");
+    printf("Input power value: ");
     scanf("%d", &b);
 
     printf("Values before powerValue(): a = %d, b = %d\n", a, b);
