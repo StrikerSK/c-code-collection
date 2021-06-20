@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include <ctype.h>
+#include <stdbool.h>
 
 // General formula for generating random number from given range
 int randomizeNumber(int lowerLimit, int upperLimit) {
@@ -19,4 +21,18 @@ char* toLower(char* s) {
 char* toUpper(char* s) {
     for(char *p=s; *p; p++) *p=toupper(*p);
     return s;
+}
+
+// Formula to comapre two strings
+bool compareStrings(char *firstString, char *secondString) {
+    if (strcmp(firstString, secondString) == 0 ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Formula to comapre two case insensitive strings
+bool compareStringsInsensitive(char *firstString, char *secondString) {
+    return compareStrings(toLower(firstString), toLower(secondString));
 }
