@@ -25,11 +25,7 @@ char* toUpper(char* s) {
 
 // Formula to comapre two strings
 bool compareStrings(char *firstString, char *secondString) {
-    if (strcmp(firstString, secondString) == 0 ) {
-        return true;
-    } else {
-        return false;
-    }
+    return strcmp(firstString, secondString) == 0;
 }
 
 // Formula to comapre two case insensitive strings

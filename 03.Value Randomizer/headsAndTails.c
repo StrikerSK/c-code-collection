@@ -5,13 +5,13 @@
 #include "randomizer.c"
 
 int main() {
-    char *gameOptions[] = { "head", "tail" };
+    char gameOptions[2][10] = { "head", "tail" };
     char playerPick[4];
 
     printf("Head or tail? ");
     scanf("%s", playerPick);
 
-    if (compareStrings(playerPick, gameOptions[randomizeNumber(0,1)])){
+    if (compareStringsInsensitive(playerPick, gameOptions[randomizeNumber(0,1)])){
         printf("Player wins! Congratulations!\n");
     } else {
         printf("Computer wins!\n");
