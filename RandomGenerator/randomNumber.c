@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "randomizer.c"
+
+#include "../ReusableCode/valueGenerator.c"
 
 int main() {
     int upperLimit, lowerLimit;

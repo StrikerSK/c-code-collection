@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "randomizer.c"
+#include "../ReusableCode/valueGenerator.c"
 
 int main() {
     char gameOptions[2][10] = { "head", "tail" };

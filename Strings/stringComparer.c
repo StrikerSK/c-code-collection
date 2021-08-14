@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "randomizer.c"
+#include "../ReusableCode/stringFunctions.c"
 
 int main() {
     char firstString[20], secondString[20];
@@ -11,7 +11,7 @@ int main() {
     printf("Second string: ");
     scanf("%s", secondString);
 
-    printf("Are provided strings insensitively equal? %s!\n", compareStringsInsensitive(firstString, secondString) ? "Yes" : "No");
+    printf("Are provided strings insensitively equal?\n %s!\n", compareStringsInsensitive(firstString, secondString) ? "Yes" : "No");
 
     return 0;
 }
